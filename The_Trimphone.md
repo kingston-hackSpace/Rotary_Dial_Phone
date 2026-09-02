@@ -51,8 +51,6 @@ In this tutorial, we will trigger the phone's **ring** and **"hook switch**. We 
 
 - Put the dial aside, just pick it up carefully.
 
-- Your opened phone should look like [this]()
-
 ---
 ## IDENTIFYING THE PARTS
 
@@ -66,4 +64,4 @@ Identify :
 
   - Transducer (ringer)
 
-See [reference image here]
+See [reference image here](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/Phone_parts.jpg)
