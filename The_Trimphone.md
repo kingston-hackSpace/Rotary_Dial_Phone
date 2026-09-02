@@ -86,4 +86,28 @@ Let's start buy testing that the hook switch works properly. We will test *conti
 ---
 ## TESTING the TRANSDUCER (ringer)
 
+**STEP 1: the Transducer**
 
+A transducer is an electronic component that converts an electrical signal directly into sound. This is the component that emits the "calling ringing sound" in a Trimphone. 
+
+*NOTE: Older dial phones use mechanical bells instead of transducers. If you are hacking one of those, the following instruction will differ.*
+
+- Identify in the tranducer in the phone's circuit board, and identify its possitive and negative terminal screws. You should see a positive icon (+) on it. See this [reference image](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/transducer.jpg)
+
+- Clamp a red crocodile clip on the positive terminal (+), and a black crocodile clip on the negative terminal.
+
+- We will recap this part later, leave it like that for now. 
+
+**STEP 2: The H-Bridge Motor Driver**
+
+You will need a H-bridge motor driver to make the transducer "ring". 
+
+The transducer needs an AC signal to produce sound, but Arduino pins only output steady DC. The H-Bridge lets us rapidly flip polarity under Arduino control, simulating the AC signal required.
+
+You will need a 12V Power Supply to power the H-bridge driver. 
+
+See [wiring diagram here]
+
+
+
+STEP 3: The code
