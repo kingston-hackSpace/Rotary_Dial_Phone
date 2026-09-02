@@ -75,4 +75,6 @@ Let's start buy testing that the hook switch works properly. We will test *conti
 
 - Look at the TERMINAL BLOCK: aligned set of screws on the phone's circuit. They go from T1 to T19. See [this reference image](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/Screws.jpg)
 
-- 
+- T2 and T6 should internally connect the hook switch. Make a continuity test using a tester to confirm. Press the hook switch when you make the test. If you need further guidance, ask a hackSpace technician. 
+
+- Clamp a coloured crocodile clip to T2, and a black crocodile clip to T6. From the other side of the crocodile clips, clamp a wire, and then follow this [LED wiring diagram]()
