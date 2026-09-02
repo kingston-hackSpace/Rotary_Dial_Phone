@@ -82,3 +82,8 @@ Let's start buy testing that the hook switch works properly. We will test *conti
 - Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_hook-switch.ino) into your Arduino Board.
 
 - The LED should turn ON/OFF when you pressed the phone's hook switch.
+
+---
+## TESTING the TRANSDUCER (ringer)
+
+
