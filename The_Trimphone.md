@@ -98,7 +98,7 @@ A transducer is an electronic component that converts an electrical signal direc
 
 - We will recap this part later, leave it like that for now. 
 
-**STEP 2: The H-Bridge Motor Driver**
+**STEP 2.1: The H-Bridge Motor Driver**
 
 You will need a H-bridge motor driver to make the transducer "ring". 
 
@@ -106,7 +106,14 @@ The transducer needs an AC signal to produce sound, but Arduino pins only output
 
 You will need a 12V Power Supply to power the H-bridge driver. 
 
-See [wiring diagram here]
+- Follow this [wiring diagram](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_transducer_bb.jpg)
+
+- Upload [this code] to your Arduino board.
+
+- As a result, the transducer should ring if the hook switch is not pressed (handset lifted), and stop ringing if the switch is pressed. 
+
+ **STEP 2.2: Exploring ringing patterns (OPTIONAL)**
+
 
 
 
