@@ -69,7 +69,7 @@ Identify :
 See [reference image here](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/Phone_parts.jpg)
 
 ---
-## TESTING HOOK SWITCH
+## TESTING the HOOK SWITCH
 
 Let's start buy testing that the hook switch works properly. We will test *continuity*, and make an LED turn ON/OFF when pushing the switch. 
 
