@@ -52,7 +52,8 @@ In this tutorial, we will trigger the phone's **ring** and **"hook switch**. We 
 - Put the dial aside, just pick it up carefully.
 
 - Your opened phone should look like [this]()
-  ---
+
+---
 ## IDENTIFYING THE PARTS
 
 Identify 
