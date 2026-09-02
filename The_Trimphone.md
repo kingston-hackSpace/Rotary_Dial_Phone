@@ -77,4 +77,8 @@ Let's start buy testing that the hook switch works properly. We will test *conti
 
 - T2 and T6 should internally connect the hook switch. Make a continuity test using a tester to confirm. Press the hook switch when you make the test. The multimeter should "bip" when the switch is pressed. If you need further guidance, ask a hackSpace technician. 
 
-- Clamp a coloured crocodile clip to T2, and a black crocodile clip to T6. From the other side of the crocodile clips, clamp a wire, and then follow this [LED wiring diagram]()
+- Clamp a coloured crocodile clip to T2, and a black crocodile clip to T6. From the other side of the crocodile clips, clamp a wire, and then follow this [LED wiring diagram](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_hook-switch.jpg)
+
+- Upload this [LED code] into your Arduino Board.
+
+- The LED should turn ON/OFF when you pressed the phone's hook switch
