@@ -56,4 +56,14 @@ In this tutorial, we will trigger the phone's **ring** and **"hook switch**. We 
 ---
 ## IDENTIFYING THE PARTS
 
-Identify 
+Identify :
+
+  - Handset
+
+  - Dial
+
+  - Hook switch
+
+  - Transducer (ringer)
+
+See [reference image here]
