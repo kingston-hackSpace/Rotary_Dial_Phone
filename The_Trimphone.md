@@ -79,6 +79,6 @@ Let's start buy testing that the hook switch works properly. We will test *conti
 
 - Clamp a coloured crocodile clip to T2, and a black crocodile clip to T6. From the other side of the crocodile clips, clamp a wire, and then follow this [LED wiring diagram](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_hook-switch.jpg)
 
-- Upload [this code] into your Arduino Board.
+- Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_hook-switch.ino) into your Arduino Board.
 
-- The LED should turn ON/OFF when you pressed the phone's hook switch
+- The LED should turn ON/OFF when you pressed the phone's hook switch.
