@@ -18,6 +18,8 @@ In this tutorial, we will trigger the phone's **ring** and **"hook switch**. We 
 
 - A Trimphone
 
+- Multimeter
+
 - Arduino UNO
 
 - Dual H-Bridge motor driver (L298N)
@@ -65,3 +67,12 @@ Identify :
   - Transducer (ringer)
 
 See [reference image here](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/Phone_parts.jpg)
+
+---
+## TESTING HOOK SWITCH
+
+Let's start buy testing that the hook switch works properly. We will test *continuity*, and make an LED turn ON/OFF when pushing the switch. 
+
+- Look at the TERMINAL BLOCK: aligned set of screws on the phone's circuit. They go from T1 to T19. See [this reference image]
+
+- 
