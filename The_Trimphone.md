@@ -118,3 +118,5 @@ You will need a 12V Power Supply to power the H-bridge driver.
 
 
 STEP 3: The code
+
+Intall 2 libraries:
