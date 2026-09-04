@@ -117,6 +117,26 @@ You will need a 12V Power Supply to power the H-bridge driver.
 
 
 
-STEP 3: The code
+*STEP 3: 
 
-Intall 2 libraries:
+
+
+**STEP 4: MP3 Shield**
+
+- To do the following step, you will need to remove the wires from the Arduino UNO. Remember their location.
+  
+- Mount the MP3 shield on top of your Arduino UNO.
+
+- Re-wire as before, but now on the MP3 shield.
+
+- Plug the hamburger-speaker into the MP3 shield's 3.5 jack connector. 
+
+- Intall the following libraries libraries:
+
+  - pending here
+
+- Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_mp3-shield.ino) to your board.
+
+- Now
+
+- **STEP 4: Listening via the handset**
