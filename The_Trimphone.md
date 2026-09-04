@@ -108,7 +108,7 @@ You will need a 12V Power Supply to power the H-bridge driver.
 
 - Follow this [wiring diagram](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_transducer_bb.jpg)
 
-- Upload [this code] to your Arduino board.
+- Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_transducer.ino) to your Arduino board.
 
 - As a result, the transducer should ring if the hook switch is not pressed (handset lifted), and stop ringing if the switch is pressed. 
 
