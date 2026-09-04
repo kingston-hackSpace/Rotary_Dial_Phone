@@ -1,6 +1,6 @@
 # The Trimphone
 
-[About the The Trimphone](https://www.londonmuseum.org.uk/collections/v/object-726842/telephone/), by the London Museum. 
+[About The Trimphone](https://www.londonmuseum.org.uk/collections/v/object-726842/telephone/), by the London Museum. 
 
 [How did the phone sound?](https://www.youtube.com/watch?v=lYEIRegf22k)
 
@@ -9,7 +9,7 @@
 ---
 ## DESCRIPTION
 
-In this tutorial, we will trigger the phone's **ring** and **"hook switch**. We will also play a soundtrack directly on the **handset**.
+In this tutorial, we will trigger the phone to **ring** via the **"hook switch**. We will also play a soundtrack directly on the **handset**.
 
 *This tutorial doesnt cover using the phone's dial.* 
 
@@ -71,17 +71,17 @@ See [reference image here](https://github.com/kingston-hackSpace/Rotary_Dial_Pho
 ---
 ## TESTING the HOOK SWITCH
 
-Let's start buy testing that the hook switch works properly. We will test *continuity*, and make an LED turn ON/OFF when pushing the switch. 
+Let's start by testing that the hook switch works properly. We will test *continuity*, and make an LED turn ON/OFF when pushing the switch. 
 
 - Look at the TERMINAL BLOCK: aligned set of screws on the phone's circuit. They go from T1 to T19. See [this reference image](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/Screws.jpg)
 
-- T2 and T6 should internally connect the hook switch. Make a continuity test using a tester to confirm. Press the hook switch when you make the test. The multimeter should "bip" when the switch is pressed. If you need further guidance, ask a hackSpace technician. 
+- T2 and T6 are internally connected to the hook switch. Make a continuity test using a tester to confirm. Press the hook switch when you make the test. The multimeter should "beep" when the switch is pressed. If you need further guidance, ask a hackSpace technician. 
 
 - Clamp a coloured crocodile clip to T2, and a black crocodile clip to T6. From the other side of the crocodile clips, clamp a wire, and then follow this [LED wiring diagram](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_hook-switch.jpg)
 
-- Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_hook-switch.ino) into your Arduino Board.
+- Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_hook-switch.ino) to your Arduino Board.
 
-- The LED should turn ON/OFF when you pressed the phone's hook switch.
+- The LED should turn ON/OFF when you press the phone's hook switch.
 
 ---
 ## TESTING the TRANSDUCER (ringer)
@@ -92,15 +92,15 @@ A transducer is an electronic component that converts an electrical signal direc
 
 *NOTE: Older dial phones use mechanical bells instead of transducers. If you are hacking one of those, the following instruction will differ.*
 
-- Identify in the tranducer in the phone's circuit board, and identify its possitive and negative terminal screws. You should see a positive icon (+) on it. See this [reference image](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/transducer.jpg)
+- Identify the tranducer in the phone's circuit board, and identify its positive and negative terminal screws. You should see a positive icon (+) on it. See this [reference image](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/transducer.jpg)
 
 - Clamp a red crocodile clip on the positive terminal (+), and a black crocodile clip on the negative terminal.
 
-- We will recap this part later, leave it like that for now. 
+- We will revisit this part later, leave it like that for now. 
 
 **STEP 2.1: The H-Bridge Motor Driver**
 
-You will need a H-bridge motor driver to make the transducer "ring". 
+You will need an H-bridge motor driver to make the transducer "ring". 
 
 The transducer needs an AC signal to produce sound, but Arduino pins only output steady DC. The H-Bridge lets us rapidly flip polarity under Arduino control, simulating the AC signal required.
 
@@ -114,13 +114,13 @@ You will need a 12V Power Supply to power the H-bridge driver.
 
  **STEP 2.2: Exploring ringing patterns (OPTIONAL)**
 
-The ringing pattern in the previous code has been programmed to sound that way. If you would like it to sound differently, you can re-programme the pattern.
+The ringing pattern in the previous code has been programmed to sound that way. If you would like it to sound different, you can re-programme the pattern.
 
 The ringing pattern is entirely controlled by one array in your code:
 
     const unsigned long ringPattern[] = {400, 200, 400, 2000};
 
-This is a sequence, cycling through 4 steps (array of 4 objects), in which the values are durations in milliseconds for each step. Change this values to explore different patterns:
+This is a sequence, cycling through 4 steps (array of 4 values), in which the values are durations in milliseconds for each step. Change these values to explore different patterns:
 
     const unsigned long ringPattern[] = {100, 0, 300, 100};
 
@@ -138,7 +138,7 @@ pitchA and pitchB are the two frequencies your code alternates between to create
      const unsigned long pitchA = 800; // ~625Hz
      const unsigned long pitchB = 500; //~1000Hz
 
-Curiocity: Check [how this phone used to sound here](https://www.youtube.com/watch?v=lYEIRegf22k)
+Curiosity: Check [how this phone used to sound here](https://www.youtube.com/watch?v=lYEIRegf22k)
 
 **STEP 3: Installing libraries**
 
@@ -170,12 +170,12 @@ Use your computer to upload an MP3 track to the SD card. The track **MUST** be t
 
 - Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_mp3-shield.ino) to your board.
 
-- The track should play when the hock switch is pressed (handset down)
+- The track should play when the hook switch is pressed (handset down)
 
 
 - **STEP 6: Listening via the handset**
 
-On our last step, we want to use the handset instead of the hamburger-speaker. 
+For our last step, we want to use the handset instead of the hamburger-speaker. 
 
 - Unwire the handset from the phone's circuit board (unscrew the wires, 4 in total)
 
@@ -191,4 +191,4 @@ On our last step, we want to use the handset instead of the hamburger-speaker.
  
 - Remove the hamburger-speaker from the MP3 shield, and connect the **3.5 Audio Jack connector with 4 screw terminals (male)** instead. 
 
-- This should be enough. You should now here the sounds coming from the handset.
+- This should be enough. You should now hear the sounds coming from the handset.
