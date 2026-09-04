@@ -140,7 +140,25 @@ pitchA and pitchB are the two frequencies your code alternates between to create
 
 Curiocity: Check [how this phone used to sound here](https://www.youtube.com/watch?v=lYEIRegf22k)
 
-**STEP 3: MP3 Shield**
+**STEP 3: Installing libraries**
+
+To be able to use the MP3 shield you will need to install some libraries. 
+
+Follow the instructions here: [Using the SFEMP3Shield Library](https://learn.sparkfun.com/tutorials/mp3-player-shield-hookup-guide-v15/all#using-the-sfemp3shield-library)
+
+Once you have installed the libraries, test that they are working properly by following the example available at the same link: "Upload an Example Sketch".
+
+Ask a technician if you need further support
+
+**STEP 4: MP3 on the SD card**
+
+Your MP3 shield KIT should include an SD card. 
+
+Use your computer to upload an MP3 track to the SD card. The track **MUST** be titled as follows:
+
+    track001.mp3
+
+**STEP 5: MP3 Shield**
 
 - To do the following step, you will need to remove the wires from the Arduino UNO. Remember their pin numbers.
   
@@ -150,12 +168,27 @@ Curiocity: Check [how this phone used to sound here](https://www.youtube.com/wat
 
 - Plug the hamburger-speaker into the MP3 shield's 3.5 jack connector. 
 
-- Intall the following libraries libraries:
-
-  - SdFat by Bill Greiman
-
 - Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_mp3-shield.ino) to your board.
 
-- Now
+- The track should play when the hock switch is pressed (handset down)
 
-- **STEP 4: Listening via the handset**
+
+- **STEP 6: Listening via the handset**
+
+On our last step, we want to use the handset instead of the hamburger-speaker. 
+
+- Unwire the handset from the phone's circuit board (unscrew the wires, 4 in total)
+
+- Rewire them to a **3.5 Audio Jack connector with 4 screw terminals (male)**. See connections below or [this photo]:
+
+    - White > GND
+ 
+    - Red > V
+ 
+    - Blue > R
+ 
+    - Green > L
+ 
+- Remove the hamburger-speaker from the MP3 shield, and connect the **3.5 Audio Jack connector with 4 screw terminals (male)** instead. 
+
+- This should be enough. You should now here the sounds coming from the handset.
