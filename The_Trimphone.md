@@ -114,16 +114,35 @@ You will need a 12V Power Supply to power the H-bridge driver.
 
  **STEP 2.2: Exploring ringing patterns (OPTIONAL)**
 
+The ringing pattern in the previous code has been programmed to sound that way. If you would like it to sound differently, you can re-programme the pattern.
 
+The ringing pattern is entirely controlled by one array in your code:
 
+    const unsigned long ringPattern[] = {400, 200, 400, 2000};
 
-*STEP 3: 
+This is a sequence, cycling through 4 steps (array of 4 objects), in which the values are durations in milliseconds for each step. Change this values to explore different patterns:
 
+    const unsigned long ringPattern[] = {100, 0, 300, 100};
 
+    const unsigned long ringPattern[] = {200, 150, 200, 1200};
 
-**STEP 4: MP3 Shield**
+ **STEP 2.3: Exploring sound pitch (OPTIONAL)**
 
-- To do the following step, you will need to remove the wires from the Arduino UNO. Remember their location.
+ Identify the following variables in your code:
+
+     const unsigned long pitchA = 400;
+     const unsigned long pitchB = 350;
+
+pitchA and pitchB are the two frequencies your code alternates between to create the warble sound. Test the following values:
+
+     const unsigned long pitchA = 800; // ~625Hz
+     const unsigned long pitchB = 500; //~1000Hz
+
+Curiocity: Check [how this phone used to sound here](https://www.youtube.com/watch?v=lYEIRegf22k)
+
+**STEP 3: MP3 Shield**
+
+- To do the following step, you will need to remove the wires from the Arduino UNO. Remember their pin numbers.
   
 - Mount the MP3 shield on top of your Arduino UNO.
 
@@ -133,7 +152,7 @@ You will need a 12V Power Supply to power the H-bridge driver.
 
 - Intall the following libraries libraries:
 
-  - pending here
+  - SdFat by Bill Greiman
 
 - Upload [this code](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_mp3-shield.ino) to your board.
 
