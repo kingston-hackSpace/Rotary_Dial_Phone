@@ -179,7 +179,7 @@ On our last step, we want to use the handset instead of the hamburger-speaker.
 
 - Unwire the handset from the phone's circuit board (unscrew the wires, 4 in total)
 
-- Rewire them to a **3.5 Audio Jack connector with 4 screw terminals (male)**. See connections below or [this photo]:
+- Rewire them to a **3.5 Audio Jack connector with 4 screw terminals (male)**. See connections below or [this photo](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/jack_connector.jpg):
 
     - White > GND
  
