@@ -173,7 +173,7 @@ Use your computer to upload an MP3 track to the SD card. The track **MUST** be t
 - The track should play when the hook switch is pressed (handset down)
 
 
-- **STEP 6: Listening via the handset**
+**STEP 6: Listening via the handset**
 
 For our last step, we want to use the handset instead of the hamburger-speaker. 
 
@@ -192,3 +192,9 @@ For our last step, we want to use the handset instead of the hamburger-speaker.
 - Remove the hamburger-speaker from the MP3 shield, and connect the **3.5 Audio Jack connector with 4 screw terminals (male)** instead. 
 
 - This should be enough. You should now hear the sounds coming from the handset.
+
+**STEP 7: Timing the ringing**
+
+- The following code creates intervals for periods of ringing (10 seconds) and periods of silence (15min). If the phone is picked up, the silence periods resets.
+
+[Code: Timing the phone's ringing periods] 
