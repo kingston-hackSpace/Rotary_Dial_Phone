@@ -197,4 +197,4 @@ For our last step, we want to use the handset instead of the hamburger-speaker.
 
 - The following code creates intervals for periods of ringing (10 seconds) and periods of silence (15min). If the phone is picked up, the silence periods resets.
 
-[Code: Timing the phone's ringing periods] 
+[Code: Timing the phone's ringing periods](https://github.com/kingston-hackSpace/Rotary_Dial_Phone/blob/main/test_timing-ringing.ino)
